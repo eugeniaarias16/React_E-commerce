@@ -1,0 +1,9 @@
+// colors.js
+export const colorTheme = {
+  platinum: "#E5E5E5",
+  lightBlue: "#74b3ce",
+  tealGreen: "#508991",
+  green: "#09bc8a",
+  darkGreen: "#004346",
+  darkBlue: "#172a3a",
+};
