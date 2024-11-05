@@ -7,7 +7,7 @@ import {
 } from '@chakra-ui/react';
 
 import { SubMenuItem } from "./SubMenuItem";
-import { StyledButtonMenu } from './Styles';
+import { StyledButtonMenu, StyledMenuContent } from './styles'; 
 
 export const MenuItemButton = ({ itemName, subItems }) => {
   return (
@@ -15,15 +15,15 @@ export const MenuItemButton = ({ itemName, subItems }) => {
       <StyledButtonMenu  asChild>
         <Button variant="outline" size="sm">{itemName}</Button>
       </StyledButtonMenu>
-      <MenuContent>
-        {subItems.map((subItem, index) => (
+      <StyledMenuContent >
+        {subItems.map((subItem, index) =>
           <SubMenuItem
             key={index}
             subItemName={subItem.name}
             subItemLink={subItem.url}
           />
-        ))}
-      </MenuContent>
+        )}
+      </StyledMenuContent>
     </MenuRoot>
   )
 }
