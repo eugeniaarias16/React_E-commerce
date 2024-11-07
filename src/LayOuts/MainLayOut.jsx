@@ -2,6 +2,7 @@ import { Box, Grid } from '@chakra-ui/react';
 import React from 'react';
 import { NavBar, Footer } from '../components';
 import styled from 'styled-components';
+import { MainRouter } from '../router';
 
 const GridBox = styled(Grid)`
   grid-template-areas: 
@@ -13,7 +14,7 @@ const GridBox = styled(Grid)`
   width: 100%;
 `;
 
-export const MainLayOut = ({ children }) => {
+export const MainLayOut = () => {
   return (
     <GridBox>
 
@@ -23,8 +24,8 @@ export const MainLayOut = ({ children }) => {
       </Box>
 
       {/* Main */}
-      <Box as="main" gridArea="main">
-        {children}
+      <Box as="main" gridArea="main" minHeight={'1000px'}>
+        <MainRouter/>
       </Box>
 
       {/* Footer */}

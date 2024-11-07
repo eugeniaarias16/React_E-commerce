@@ -1,19 +1,20 @@
 import { ChakraProvider } from '@chakra-ui/react';
 import { useState } from 'react';
-import {NavBar} from './components/NavBar'
-import { MainLayOut } from './LayOuts'; 
+import { BrowserRouter as Router } from 'react-router-dom';
+import { MainLayOut } from './LayOuts';
+import { CategoriesComponent } from './components';
 
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
-  <>
-  <MainLayOut> 
-    
-  </MainLayOut>
-  </>
-  
+    <>
+      <Router>
+        <MainLayOut />
+      </Router>
+    </>
+
   )
 }
 

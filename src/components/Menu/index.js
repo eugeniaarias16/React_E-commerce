@@ -1,3 +1,3 @@
 export * from './MenuItem';
 export * from './SubMenuItem';
-export * from './Styles';
+export * from './MenuStyles'

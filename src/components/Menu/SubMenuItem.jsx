@@ -1,5 +1,4 @@
-import { MenuItem } from "@chakra-ui/react";
-import { StyledSubMenuItem } from "./styles";
+import { StyledSubMenuItem } from "./MenuStyles";
 
 
 export const SubMenuItem = ({ subItemName, subItemLink }) => {

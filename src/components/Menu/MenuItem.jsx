@@ -1,13 +1,11 @@
 import React from 'react'
 import {
   Button,
-  MenuContent,
-  MenuItem,
   MenuRoot,
 } from '@chakra-ui/react';
 
 import { SubMenuItem } from "./SubMenuItem";
-import { StyledButtonMenu, StyledMenuContent } from './styles'; 
+import { StyledButtonMenu, StyledMenuContent } from './MenuStyles'; 
 
 export const MenuItemButton = ({ itemName, subItems }) => {
   return (
