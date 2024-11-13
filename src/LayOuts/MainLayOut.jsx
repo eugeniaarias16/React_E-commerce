@@ -9,9 +9,13 @@ const GridBox = styled(Grid)`
     "header header" 
     "main main" 
     "footer footer";
+  grid-template-columns  :1fr ;
   grid-template-rows: auto 1fr auto;
   min-height: 100vh;
+  max-height: 100vw;
   width: 100%;
+  margin: 0 auto;
+  
 `;
 
 export const MainLayOut = () => {
@@ -24,7 +28,7 @@ export const MainLayOut = () => {
       </Box>
 
       {/* Main */}
-      <Box as="main" gridArea="main" minHeight={'1000px'}>
+      <Box as="main" gridArea="main" >
         <MainRouter/>
       </Box>
 

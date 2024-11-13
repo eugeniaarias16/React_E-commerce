@@ -6,15 +6,16 @@ const categoryMapping = {
   Electronics: ["smartphones", "laptops", "tablets", "mobile-accessories"],
   Home: ["furniture", "home-decoration", "kitchen-accessories"],
   Beauty: ["beauty", "skin-care", "fragrances"],
-  // Sports: ["sports-accessories", "motorcycle"],
   Vehicles: ["vehicle", "motorcycle"],
   Others: ["sunglasses", "groceries"],
 };
 
 export const recategorizeCategories = (categories) => {
-  console.log("Verificando categorías en recategorizeCategories:", categories);
 
+  // Array donde guardamos la nueva categorizacion 
   const organizedCategories = [];
+  
+
 
   for (const [category, keywords] of Object.entries(categoryMapping)) {
     const subcategories = categories
@@ -29,15 +30,16 @@ export const recategorizeCategories = (categories) => {
       })
       .map((subcat) => {
         const subcatName = typeof subcat === "string" ? subcat : subcat.name;
+        const newSlug= subcatName.replace(
+          /\s+/g,
+          "-"
+        ).toLowerCase();
         return {
-          slug: subcatName,
+          slug: newSlug,
           name: subcatName
             .replace(/-/g, " ")
             .replace(/\b\w/g, (l) => l.toUpperCase()), 
-          url: `https://dummyjson.com/products/category/${subcatName.replace(
-            /\s+/g,
-            "-"
-          )}`, // Reemplazar espacios con guiones en la URL
+          url: `https://dummyjson.com/products/category/${newSlug}`, // Reemplaza espacios con guiones en la URL
         };
       });
 

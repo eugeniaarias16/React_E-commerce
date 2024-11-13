@@ -1,12 +1,12 @@
 import React from 'react'
-import { Banner, Categories } from '../components'
+import { Banner,  CategorySection } from '../components'
 
 
 export const Home = () => {
   return (
     <div>
       <Banner/>
-      <Categories/>
+      <CategorySection categoryName="Woman"/>
     </div>
   )
 }

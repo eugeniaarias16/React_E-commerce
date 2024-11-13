@@ -1,6 +1,7 @@
 import React from 'react';
 import {BannerBox, CarouselImagesBox} from './index';
 import { useState } from 'react';
+import { useCarousel } from '../../hooks/useCarousel';
 
 const Images = [
   {
@@ -72,18 +73,7 @@ const Images = [
 ];
 
 export const Banner = () => {
-  const [currentIndex, setcurrentIndex] = useState(0);
-  
-  const previous = (currentIndex) => {
-    const isFirstSlide = currentIndex === 0;
-    const newIndex = isFirstSlide ? Images.length - 1 : currentIndex - 1;
-    setcurrentIndex(newIndex);
-  };
-  const next = (currentIndex) => {
-    const isLastSlide = currentIndex === Images.length - 1;
-    const newIndex = isLastSlide ? 0 : currentIndex + 1;
-    setcurrentIndex(newIndex);
-  };
+  const { currentIndex, previous, next } = useCarousel(Images);
 
   return (
     <BannerBox>
