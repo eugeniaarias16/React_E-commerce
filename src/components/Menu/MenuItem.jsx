@@ -8,6 +8,7 @@ import { SubMenuItem } from "./SubMenuItem";
 import { StyledButtonMenu, StyledMenuContent } from './MenuStyles'; 
 
 export const MenuItemButton = ({ itemName, subItems }) => {
+
   return (
     <MenuRoot>
       <StyledButtonMenu  asChild>
@@ -18,7 +19,7 @@ export const MenuItemButton = ({ itemName, subItems }) => {
           <SubMenuItem
             key={index}
             subItemName={subItem.name}
-            subItemLink={subItem.url}
+            subItemEndPoint={subItem.slug}
           />
         )}
       </StyledMenuContent>

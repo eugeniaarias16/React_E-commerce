@@ -7,6 +7,12 @@ export const Home = () => {
     <div>
       <Banner/>
       <CategorySection categoryName="Woman"/>
+      <CategorySection categoryName="Men"/>
+      <CategorySection categoryName="Electronic"/>
+      <CategorySection categoryName="Home"/>
+      <CategorySection categoryName="Beuty"/>
+      <CategorySection categoryName="Vehicles"/>
+      <CategorySection categoryName="Others"/>
     </div>
   )
 }

@@ -1,8 +1,18 @@
 import { useNavigate } from 'react-router-dom';
-import { CategoryCardLink} from './CategoriesStyles'
+import { CategoryCardLink } from './CategoriesStyles';
+import { useItemsbyCategory } from '../../hooks';
+import { useEffect, useState } from 'react';
 
 export const CategoriesCard = ({ name, endPoint }) => {
   const navigate = useNavigate();
+  const { items, loading, coverImage } = useItemsbyCategory(endPoint);
+  const [imageToShow, setImageToShow] = useState(null);
+
+  useEffect(() => {
+    if (!loading && coverImage) {
+      setImageToShow(coverImage);
+    }
+  }, [loading, coverImage]);
 
   const handleClick = () => {
     navigate(`/category/${endPoint}`);
@@ -12,13 +22,8 @@ export const CategoriesCard = ({ name, endPoint }) => {
 
   return (
     <CategoryCardLink onClick={handleClick}>
-      <img src="https://cdn.dummyjson.com/products/images/beauty/Essence%20Mascara%20Lash%20Princess/1.png" alt="" />
+      {imageToShow && <img src={imageToShow} alt={`${upperName} cover`} />}
       <h4>{upperName}</h4>
     </CategoryCardLink>
   );
 };
-
-
-
-
-

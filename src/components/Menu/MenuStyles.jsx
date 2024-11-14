@@ -33,6 +33,7 @@ color: ${colorTheme.lightBlue};
 text-decoration: none;
 border-bottom: solid 1px ;
 justify-content: center;
+
 &:hover {
   color : ${colorTheme.darkGreen};
   background-color: ${colorTheme.tealGreen};

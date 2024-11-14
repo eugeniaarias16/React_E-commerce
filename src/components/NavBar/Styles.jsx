@@ -6,7 +6,7 @@ import {colorTheme} from '../../styles/colors';
 export const NavBarBox=styled(Container)`
 
   background-color: ${colorTheme.darkGreen};
-  height: 200px;
+  height: 250px;
   width: 100%;
   
 `;
@@ -14,9 +14,11 @@ export const NavBarBox=styled(Container)`
 export const StyledTopFlex = styled(Flex)`
   background-color:none;
   border-bottom: solid 2px ${colorTheme.darkBlue};
-  height: 50%;
+  height: 60%;
   margin: 0 10px;
   align-items: center;
+
+
   `;
 export const StyledBottomFlex = styled(Flex)`
 width: 90%;

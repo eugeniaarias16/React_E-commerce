@@ -18,7 +18,7 @@ export const CategoryPage = () => {
       <SideBar />
       <ItemsContainer>
         {items.map((item) => (
-          <ItemsCard endPoint={endPoint} key={item.id} item={item}/>
+          <ItemsCard endPoint={endPoint} key={item.id} item={item} />
         ))}
       </ItemsContainer>
     </CategoryBoxGrid>
