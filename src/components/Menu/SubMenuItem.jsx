@@ -1,12 +1,12 @@
-import { MenuItem } from "@chakra-ui/react";
+import { Link } from "react-router-dom";
+import { StyledSubMenuItem } from "./MenuStyles";
 
 
-export const SubMenuItem = ({ subItemName, subItemLink }) => {
+export const SubMenuItem = ({ subItemName, subItemEndPoint}) => {
   return (
-    <MenuItem asChild value={subItemName}>
-      <a href={subItemLink} target="_blank" rel="noreferrer">
+    <StyledSubMenuItem  asChild value={subItemName}>
+      <Link  to={`/category/${subItemEndPoint}`}  target="_blank" rel="noreferrer">
         {subItemName}
-      </a>
-    </MenuItem>
-    )
-};
+      </Link >
+    </StyledSubMenuItem>
+  )}

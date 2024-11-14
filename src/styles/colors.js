@@ -5,5 +5,6 @@ export const colorTheme = {
   tealGreen: "#508991",
   green: "#09bc8a",
   darkGreen: "#004346",
+  darkGreen80: "rgba(0, 67, 70, 0.8)",
   darkBlue: "#172a3a",
 };
