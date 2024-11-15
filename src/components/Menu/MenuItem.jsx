@@ -4,8 +4,8 @@ import {
   MenuRoot,
 } from '@chakra-ui/react';
 
-import { SubMenuItem } from "./SubMenuItem";
-import { StyledButtonMenu, StyledMenuContent } from './MenuStyles'; 
+import {  } from "./SubMenuItem";
+import { StyledButtonMenu, StyledMenuContent, SubMenuItem } from '../index'; 
 
 export const MenuItemButton = ({ itemName, subItems }) => {
 

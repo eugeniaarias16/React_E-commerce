@@ -5,3 +5,5 @@ export * from './Banner'
 export * from './Categories'
 export * from './ItemsDetails';
 export * from './ItemsbyCategories';
+export * from './Logo';
+export * from './cart';

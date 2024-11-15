@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import { CardInfoBox, ShopCardItem, ImageBox, QuantityBtnSection, QuantityButton, StockSection } from '../../pages/CartPageStyle';
+import { CardInfoBox, ShopCardItem, ImageBox, QuantityBtnSection, QuantityButton, StockSection } from '../../pagesStyles';
 import { CartContext } from '../../context/CartContext';
 
 export const ShopCard = ({ item }) => {

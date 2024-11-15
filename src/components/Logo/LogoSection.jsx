@@ -6,7 +6,7 @@ export const LogoSection = () => {
   return (
     <LogoSectionBox>
       <Link to="/">
-        <img src="src/assets/Logo/Logo.svg" alt="Logo" />
+        <img src="public\assets\Logo\Logo.svg" alt="Logo" />
       </Link>
     </LogoSectionBox>
   );

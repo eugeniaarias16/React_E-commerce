@@ -1,5 +1,5 @@
 import { useParams } from 'react-router-dom';
-import { CategoryBoxGrid, ItemsContainer, SideBar } from './CategoryPageStyle';
+import { CategoryBoxGrid, ItemsContainer, SideBar } from '../pagesStyles';
 import { useItemsbyCategory } from '../hooks';
 import { ItemsCard } from '../components';
 

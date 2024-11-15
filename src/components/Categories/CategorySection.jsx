@@ -1,7 +1,7 @@
 import React from 'react';
 import { CategoriesContainer, SectionCategdBox } from './CategoriesStyles'; 
 import { useFilteredCategories } from '../../hooks/useFilterCategory';
-import { CategoriesCard } from './CategoriesCard';
+import { CategoriesCard } from '../index';
 
 export const CategorySection = ({ categoryName }) => {
   const { filteredCategories, loading, error } = useFilteredCategories(categoryName);

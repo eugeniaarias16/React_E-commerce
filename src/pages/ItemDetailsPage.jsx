@@ -1,4 +1,4 @@
-import { DetailBox, ImagesBox, ItemBox } from './ItemDetailsStyle';
+import { DetailBox, ImagesBox, ItemBox } from '../pagesStyles';
 import { Carousel, InfoProducts} from '../components';
 import { useById } from '../hooks';
 import { useParams } from 'react-router';

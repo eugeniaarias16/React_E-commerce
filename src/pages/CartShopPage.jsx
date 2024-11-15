@@ -1,9 +1,9 @@
 import React, { useContext } from 'react';
-import { CartContainer, CartSection, ShopInfoSection, BtnSection, BoxShopInfo, DeleteSection } from './CartPageStyle';
-import { ShopCard } from '../components/Categories/ShopCard';
-import { CartContext } from '../context/CartContext';
+import { CartContainer, CartSection, ShopInfoSection, BtnSection, BoxShopInfo, DeleteSection } from '../pagesStyles';
+import { ShopCard } from '../components';
 import { FaTrash } from "react-icons/fa";
 import { useNavigate } from 'react-router-dom';
+import  {CartContext} from '../context/CartContext'
 
 export const CartShopPage = () => {
   const { cart, clearCart } = useContext(CartContext);

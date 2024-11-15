@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import { MainInfoContainer, Title, Price, Description, QuantityButton,QuantityBtnSection, StockSection, ButtonBuy, RatingSection, TagSection,  } from './InfoProductsStyles';
+import { MainInfoContainer, Title, Price, Description, QuantityButton,QuantityBtnSection, StockSection, ButtonBuy, RatingSection, TagSection,  } from './index';
 import { FaStar } from 'react-icons/fa';
 import { CartContext } from '../../context/CartContext';
 
