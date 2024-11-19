@@ -1,5 +1,11 @@
+// CarouselImagesBox.jsx
 import React from 'react';
-import { CarouselContainer, CarouselControls, CarouselTitle, CarouselImgs } from './Styles';
+import {
+  CarouselContainer,
+  CarouselControls,
+  CarouselTitle,
+  CarouselImgs,
+} from './Styles';
 import { MdArrowBackIosNew, MdArrowForwardIos } from 'react-icons/md';
 
 export const CarouselImagesBox = ({
@@ -11,11 +17,16 @@ export const CarouselImagesBox = ({
   next,
   isVisible,
 }) => {
+  // Manejador de error para cargar la imagen alternativa
+  const handleImageError = (event) => {
+    event.target.src = img.replace('public/assets', '/assets'); // Ajustar la ruta para el fallo
+  };
+
   return (
-    <CarouselContainer style={{ display: isVisible ? "block" : "none" }}>
+    <CarouselContainer style={{ display: isVisible ? 'block' : 'none' }}>
       <CarouselImgs>
         <a href={link}>
-          <img src={img} alt={`Slide ${id}`} />
+          <img src={img} alt={`Slide ${id}`} onError={handleImageError} />
         </a>
       </CarouselImgs>
       <CarouselControls>
