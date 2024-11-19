@@ -1,4 +1,4 @@
-// src/hooks/useCategories.js
+
 import { useEffect, useState } from 'react';
 import { useApi } from './useApi';
 import { recategorizeCategories } from '../services/category.service';

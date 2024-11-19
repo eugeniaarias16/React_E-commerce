@@ -92,3 +92,83 @@ export const CategoryCardLink = styled(Link)`
     }
   }
 `;
+
+export const FiltersWrapper = styled.div`
+  width: 100%;
+  padding: 1.5rem;
+  background-color: ${colorTheme.platinum};
+  border-radius: 15px;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+`;
+
+export const FilterSection = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  .range-labels {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+  }
+`;
+
+export const Label = styled.label`
+  font-weight: bold;
+  font-size: 1rem;
+  color: ${colorTheme.darkGreen80};
+`;
+
+export const Input = styled.input`
+  width: ${(props) => (props.type === "number" ? "80px" : "auto")};
+  padding: 0.5rem 1rem;
+  border: 1px solid ${colorTheme.tealGreen};
+  border-radius: 8px;
+  font-size: 0.9rem;
+  background-color: rgba(229, 229, 229, 0.5);
+  outline: none;
+
+  &:focus {
+    border-color: ${colorTheme.darkGreen};
+    box-shadow: 0 0 4px rgba(0, 67, 70, 0.6);
+  }
+`;
+
+export const Select = styled.select`
+  width: 100%;
+  padding: 0.5rem 1rem;
+  border: 1px solid ${colorTheme.tealGreen};
+  border-radius: 8px;
+  font-size: 0.9rem;
+  background-color: rgba(229, 229, 229, 0.5);
+  outline: none;
+
+  &:focus {
+    border-color: ${colorTheme.darkGreen};
+    box-shadow: 0 0 4px rgba(0, 67, 70, 0.6);
+  }
+`;
+
+export const ApplyButton = styled.button`
+  width: 100%;
+  padding: 0.75rem;
+  background-color: ${colorTheme.green};
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+
+  &:hover {
+    background-color: ${colorTheme.darkGreen};
+  }
+
+  &:active {
+    background-color: ${colorTheme.darkGreen80};
+  }
+`;

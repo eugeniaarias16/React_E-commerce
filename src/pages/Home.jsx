@@ -8,9 +8,9 @@ export const Home = () => {
       <Banner/>
       <CategorySection categoryName="Woman"/>
       <CategorySection categoryName="Men"/>
-      <CategorySection categoryName="Electronic"/>
+      <CategorySection categoryName="Electronics"/>
       <CategorySection categoryName="Home"/>
-      <CategorySection categoryName="Beuty"/>
+      <CategorySection categoryName="Beauty"/>
       <CategorySection categoryName="Vehicles"/>
       <CategorySection categoryName="Others"/>
     </div>

@@ -10,12 +10,15 @@ export const LogoSectionBox = styled(Box)`
   justify-content: flex-start; 
 
   a {
+    display: flex;
+    heigth:100%;
     text-decoration: none;
     color: ${colorTheme.platinum};
   }
 
   img {
-    max-width: 550px; // Ajusta el tamaño máximo del logo, cámbialo según necesites
+    
+    max-width: 550px; 
     height: auto; // Mantiene la proporción de la imagen
   }
 `;
